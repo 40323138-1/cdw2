@@ -39,7 +39,7 @@
 <v t="leo.20160328091641.3"><vh>@edit 2016_cd_2a_2.txt</vh></v>
 <v t="leo.20160328091641.4"><vh>@edit 2016_cd_2a_3.txt</vh></v>
 </v>
-<v t="leo.20160411082755.2"><vh>Recovered Nodes</vh>
+<v t="leo.20160411082755.2" a="E"><vh>Recovered Nodes</vh>
 <v t="leo.20160411082755.3" a="E"><vh>Recovered node "myflaskapp declarations" from @clean myflaskapp.py</vh>
 <v t="leo.20160411082755.4"><vh>old:myflaskapp declarations</vh></v>
 <v t="leo.20160411082755.5"><vh>new:myflaskapp declarations</vh></v>
@@ -146,9 +146,6 @@ Diff...
 - import users.s2b.g7.scrum1_task40323212
 - import users.s2b.g7.scrum2_task40323216
 - import users.s2b.g7.scrum3_task40323236
-- #g8
-- import users.s2b.g8.scrum1_task40323213
-- 
   #g9
   import users.s2b.g9.task0
   import users.s2b.g9.scrum1_task40323250
@@ -1420,8 +1417,7 @@ app.register_blueprint(users.s2b.g6.task0.bg6)
 app.register_blueprint(users.s2b.g7.scrum1_task40323212.scrum1_task40323212)
 app.register_blueprint(users.s2b.g7.scrum2_task40323216.scrum2_task40323216)
 app.register_blueprint(users.s2b.g7.scrum3_task40323236.scrum3_task40323236)
-#g8
-app.register_blueprint(users.s2b.g8.scrum1_task40323213.scrum1_task40323213)
+
 #g9
 app.register_blueprint(users.s2b.g9.task0.bg9)
 app.register_blueprint(users.s2b.g9.scrum1_task40323250.scrum1_task40323250)
@@ -1530,9 +1526,6 @@ import users.s2b.g7.task0
 import users.s2b.g7.scrum1_task40323212
 import users.s2b.g7.scrum2_task40323216
 import users.s2b.g7.scrum3_task40323236
-#g8
-import users.s2b.g8.scrum1_task40323213
-
 #g9
 import users.s2b.g9.task0
 import users.s2b.g9.scrum1_task40323250

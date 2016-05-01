@@ -96,11 +96,6 @@ import users.s2b.g9.scrum3_task40323214
 import users.s2b.g9.scrum4_task40323231
 import users.s2b.g9.scrum5_task40323230
 import users.s2b.g9.scrum6_task40323233
-
-#g10
-import users.s2b.g10.task0
-import users.s2b.g10.scrum1_task40328242
-import users.s2b.g10.scrum3_task40323222
 # 確定程式檔案所在目錄, 在 Windows 有最後的反斜線
 _curdir = os.path.join(os.getcwd(), os.path.dirname(__file__))
 # 設定在雲端與近端的資料儲存目錄
@@ -489,10 +484,6 @@ app.register_blueprint(users.s2b.g9.scrum4_task40323231.scrum4_task40323231)
 app.register_blueprint(users.s2b.g9.scrum3_task40323214.scrum3_task40323214)
 app.register_blueprint(users.s2b.g9.scrum5_task40323230.scrum5_task40323230)
 app.register_blueprint(users.s2b.g9.scrum6_task40323233.scrum6_task40323233)
-#g10
-app.register_blueprint(users.s2b.g10.task0.bg10) 
-app.register_blueprint(users.s2b.g10.scrum1_task40328242.scrum1_task40328242)
-app.register_blueprint(users.s2b.g10.scrum3_task40323222.scrum3_task40323222)
 
 
 if __name__ == "__main__":

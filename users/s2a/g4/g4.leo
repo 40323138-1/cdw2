@@ -1280,10 +1280,6 @@ def download(filename):
 </t>
 <t tx="leo.20160328094609.18"></t>
 <t tx="leo.20160328094609.3"></t>
-<t tx="leo.20160328094609.4">@language html
-傳來的變數為: {{ var1 }}
-
-</t>
 <t tx="leo.20160328094609.5"></t>
 <t tx="leo.20160328094609.6">@language python
 @tabwidth -4

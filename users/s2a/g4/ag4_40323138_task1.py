@@ -8,30 +8,6 @@ ag4_40323138 = Blueprint('ag4_40323138', __name__, url_prefix='/ag4_40323138', t
 @ag4_40323138.route('/A')
 def task1():
     outstring = '''
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>網際 2D 繪圖</title>
-    <!-- IE 9: display inline SVG -->
-    <meta http-equiv="X-UA-Compatible" content="IE=9">
-<script type="text/javascript" src="http://brython.info/src/brython_dist.js"></script>
-<script type="text/javascript" src="http://cptocadp-2015fallhw.rhcloud.com/static/Cango-8v03.js"></script>
-<script type="text/javascript" src="http://cptocadp-2015fallhw.rhcloud.com/static/Cango2D-6v13.js"></script>
-<script type="text/javascript" src="http://cptocadp-2015fallhw.rhcloud.com/static/CangoAxes-1v33.js"></script>
-
-</head>
-<body>
-
-<script>
-window.onload=function(){
-brython(1);
-}
-</script>
-
-<canvas id="plotarea" width="800" height="800"></canvas>
-
-<script type="text/python">
 from javascript import JSConstructor
 from browser import window
 import math
@@ -99,30 +75,6 @@ O(0, 0, 0, 0, 0, "lightyellow", True, 4)
 @ag4_40323138.route('/B')
 def task2():
     outstring = '''
-    <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>網際 2D 繪圖</title>
-    <!-- IE 9: display inline SVG -->
-    <meta http-equiv="X-UA-Compatible" content="IE=9">
-<script type="text/javascript" src="http://brython.info/src/brython_dist.js"></script>
-<script type="text/javascript" src="http://cptocadp-2015fallhw.rhcloud.com/static/Cango-8v03.js"></script>
-<script type="text/javascript" src="http://cptocadp-2015fallhw.rhcloud.com/static/Cango2D-6v13.js"></script>
-<script type="text/javascript" src="http://cptocadp-2015fallhw.rhcloud.com/static/CangoAxes-1v33.js"></script>
-
-</head>
-<body>
-
-<script>
-window.onload=function(){
-brython(1);
-}
-</script>
-
-<canvas id="plotarea" width="800" height="800"></canvas>
-
-<script type="text/python">
 from javascript import JSConstructor
 from browser import window
 import math
@@ -189,30 +141,6 @@ O(0, 0, 0, 0, 0, "lightyellow", True, 4)
 @ag4_40323138.route('/C')
 def task3():
     outstring = '''
-    <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>網際 2D 繪圖</title>
-    <!-- IE 9: display inline SVG -->
-    <meta http-equiv="X-UA-Compatible" content="IE=9">
-<script type="text/javascript" src="http://brython.info/src/brython_dist.js"></script>
-<script type="text/javascript" src="http://cptocadp-2015fallhw.rhcloud.com/static/Cango-8v03.js"></script>
-<script type="text/javascript" src="http://cptocadp-2015fallhw.rhcloud.com/static/Cango2D-6v13.js"></script>
-<script type="text/javascript" src="http://cptocadp-2015fallhw.rhcloud.com/static/CangoAxes-1v33.js"></script>
-
-</head>
-<body>
-
-<script>
-window.onload=function(){
-brython(1);
-}
-</script>
-
-<canvas id="plotarea" width="800" height="800"></canvas>
-
-<script type="text/python">
 from javascript import JSConstructor
 from browser import window
 import math
@@ -274,30 +202,6 @@ O(0, 0, 0, 0, 0, "lightyellow", True, 4)
 @ag4_40323138.route('/D')
 def task4():
     outstring = '''
-    <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>網際 2D 繪圖</title>
-    <!-- IE 9: display inline SVG -->
-    <meta http-equiv="X-UA-Compatible" content="IE=9">
-<script type="text/javascript" src="http://brython.info/src/brython_dist.js"></script>
-<script type="text/javascript" src="http://cptocadp-2015fallhw.rhcloud.com/static/Cango-8v03.js"></script>
-<script type="text/javascript" src="http://cptocadp-2015fallhw.rhcloud.com/static/Cango2D-6v13.js"></script>
-<script type="text/javascript" src="http://cptocadp-2015fallhw.rhcloud.com/static/CangoAxes-1v33.js"></script>
-
-</head>
-<body>
-
-<script>
-window.onload=function(){
-brython(1);
-}
-</script>
-
-<canvas id="plotarea" width="800" height="800"></canvas>
-
-<script type="text/python">
 from javascript import JSConstructor
 from browser import window
 import math

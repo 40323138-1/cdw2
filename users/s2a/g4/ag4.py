@@ -85,77 +85,77 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
 
 O(0, 0, 0, 0, 0, "lightyellow", True, 4)
 </script>
-<!-- 以協同方式加上 40323112 的 A 程式碼 -->
-<script type="text/python" src="/ag6_40323112/A"></script>
+<!-- 以協同方式加上 40323109 的 A 程式碼 -->
+<script type="text/python" src="/ag4_40323109/A"></script>
 
-<!-- 以協同方式加上 40323133 的 A 程式碼 -->
-<script type="text/python" src="/ag6_40323133/A"></script>
+<!-- 以協同方式加上 40323130 的 A 程式碼 -->
+<script type="text/python" src="/ag4_40323130/A"></script>
 
-<!-- 以協同方式加上 40323147 的 A 程式碼 -->
-<script type="text/python" src="/ag6_40323147/A"></script>
+<!-- 以協同方式加上 40323135 的 A 程式碼 -->
+<script type="text/python" src="/ag4_40323135/A"></script>
 
-<!-- 以協同方式加上 40323152 的 A 程式碼 -->
-<script type="text/python" src="/ag6_40323152/A"></script>
+<!-- 以協同方式加上 40323136 的 A 程式碼 -->
+<script type="text/python" src="/ag4_40323136/A"></script>
 
-<!-- 以協同方式加上 40323155 的 A 程式碼 -->
-<script type="text/python" src="/ag6_40323155/A"></script>
+<!-- 以協同方式加上 40323138 的 A 程式碼 -->
+<script type="text/python" src="/ag4_40323138/A"></script>
 
-<!-- 以協同方式加上 40323156 的 A 程式碼 -->
-<script type="text/python" src="/ag6_40323156/A"></script>
+<!-- 以協同方式加上 40323144 的 A 程式碼 -->
+<script type="text/python" src="/ag4_40323144/A"></script>
 
-<!-- 以協同方式加上 40323112 的 B 程式碼 -->
-<script type="text/python" src="/ag6_40323112/B"></script>
+<!-- 以協同方式加上 40323109 的 B 程式碼 -->
+<script type="text/python" src="/ag4_40323109/B"></script>
 
-<!-- 以協同方式加上 40323133 的 B 程式碼 -->
-<script type="text/python" src="/ag6_40323133/B"></script>
+<!-- 以協同方式加上 40323130 的 B 程式碼 -->
+<script type="text/python" src="/ag4_40323130/B"></script>
 
-<!-- 以協同方式加上 40323147 的 B 程式碼 -->
-<script type="text/python" src="/ag6_40323147/B"></script>
+<!-- 以協同方式加上 40323135 的 B 程式碼 -->
+<script type="text/python" src="/ag4_40323135/B"></script>
 
-<!-- 以協同方式加上 40323152 的 B 程式碼 -->
-<script type="text/python" src="/ag6_40323152/B"></script>
+<!-- 以協同方式加上 40323136 的 B 程式碼 -->
+<script type="text/python" src="/ag4_40323136/B"></script>
 
-<!-- 以協同方式加上 40323155 的 B 程式碼 -->
-<script type="text/python" src="/ag6_40323155/B"></script>
+<!-- 以協同方式加上 40323138 的 B 程式碼 -->
+<script type="text/python" src="/ag4_40323138/B"></script>
 
-<!-- 以協同方式加上 40323156 的 B 程式碼 -->
-<script type="text/python" src="/ag6_40323156/B"></script>
+<!-- 以協同方式加上 40323144 的 B 程式碼 -->
+<script type="text/python" src="/ag4_40323144/B"></script>
 
-<!-- 以協同方式加上 40323112 的 C 程式碼 -->
-<script type="text/python" src="/ag6_40323112/C"></script>
+<!-- 以協同方式加上 40323109 的 C 程式碼 -->
+<script type="text/python" src="/ag4_40323109/C"></script>
 
-<!-- 以協同方式加上 40323133 的 C 程式碼 -->
-<script type="text/python" src="/ag6_40323133/C"></script>
+<!-- 以協同方式加上 40323130 的 C 程式碼 -->
+<script type="text/python" src="/ag4_40323130/C"></script>
 
-<!-- 以協同方式加上 40323147 的 C 程式碼 -->
-<script type="text/python" src="/ag6_40323147/C"></script>
+<!-- 以協同方式加上 40323135 的 C 程式碼 -->
+<script type="text/python" src="/ag4_40323135/C"></script>
 
-<!-- 以協同方式加上 40323152 的 C 程式碼 -->
-<script type="text/python" src="/ag6_40323152/C"></script>
+<!-- 以協同方式加上 40323136 的 C 程式碼 -->
+<script type="text/python" src="/ag4_40323136/C"></script>
 
-<!-- 以協同方式加上 40323155 的 C 程式碼 -->
-<script type="text/python" src="/ag6_40323155/C"></script>
+<!-- 以協同方式加上 40323138 的 C 程式碼 -->
+<script type="text/python" src="/ag4_40323138/C"></script>
 
-<!-- 以協同方式加上 40323156 的 C 程式碼 -->
-<script type="text/python" src="/ag6_40323156/C"></script>
+<!-- 以協同方式加上 40323144 的 C 程式碼 -->
+<script type="text/python" src="/ag4_40323144/C"></script>
 
-<!-- 以協同方式加上 40323112 的 D 程式碼 -->
-<script type="text/python" src="/ag6_40323112/D"></script>
+<!-- 以協同方式加上 40323109 的 D 程式碼 -->
+<script type="text/python" src="/ag4_40323109/D"></script>
 
-<!-- 以協同方式加上 40323133 的 D 程式碼 -->
-<script type="text/python" src="/ag6_40323133/D"></script>
+<!-- 以協同方式加上 40323130 的 D 程式碼 -->
+<script type="text/python" src="/ag4_40323130/D"></script>
 
-<!-- 以協同方式加上 40323147 的 D 程式碼 -->
-<script type="text/python" src="/ag6_40323147/D"></script>
+<!-- 以協同方式加上 40323135 的 D 程式碼 -->
+<script type="text/python" src="/ag4_40323135/D"></script>
 
-<!-- 以協同方式加上 40323152 的 D 程式碼 -->
-<script type="text/python" src="/ag6_40323152/D"></script>
+<!-- 以協同方式加上 40323136 的 D 程式碼 -->
+<script type="text/python" src="/ag4_40323136/D"></script>
 
-<!-- 以協同方式加上 40323155 的 D 程式碼 -->
-<script type="text/python" src="/ag6_40323155/D"></script>
+<!-- 以協同方式加上 40323138 的 D 程式碼 -->
+<script type="text/python" src="/ag4_40323138/D"></script>
 
-<!-- 以協同方式加上 40323156 的 D 程式碼 -->
-<script type="text/python" src="/ag6_40323156/D"></script>
+<!-- 以協同方式加上 40323144 的 D 程式碼 -->
+<script type="text/python" src="/ag4_40323144/D"></script>
 
 </body>
 </html>

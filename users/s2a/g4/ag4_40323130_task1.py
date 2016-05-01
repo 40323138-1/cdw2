@@ -2,36 +2,12 @@
 from flask import Blueprint, render_template
 
 # 利用 Blueprint建立 ag1, 並且 url 前綴為 /ag1, 並設定 template 存放目錄
-ag4_40323138 = Blueprint('ag4_40323138', __name__, url_prefix='/ag4_40323138', template_folder='templates')
+ag4_40323130 = Blueprint('ag4_40323130', __name__, url_prefix='/ag4_40323130', template_folder='templates')
 
 # 展示傳回 Brython 程式
-@ag4_40323138.route('/A')
+@ag4_40323130.route('/A')
 def task1():
     outstring = '''
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>網際 2D 繪圖</title>
-    <!-- IE 9: display inline SVG -->
-    <meta http-equiv="X-UA-Compatible" content="IE=9">
-<script type="text/javascript" src="http://brython.info/src/brython_dist.js"></script>
-<script type="text/javascript" src="http://cptocadp-2015fallhw.rhcloud.com/static/Cango-8v03.js"></script>
-<script type="text/javascript" src="http://cptocadp-2015fallhw.rhcloud.com/static/Cango2D-6v13.js"></script>
-<script type="text/javascript" src="http://cptocadp-2015fallhw.rhcloud.com/static/CangoAxes-1v33.js"></script>
-
-</head>
-<body>
-
-<script>
-window.onload=function(){
-brython(1);
-}
-</script>
-
-<canvas id="plotarea" width="800" height="800"></canvas>
-
-<script type="text/python">
 from javascript import JSConstructor
 from browser import window
 import math
@@ -71,16 +47,11 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
             "lineWidth": linewidth })
 
     # 複製 cmbr, 然後命名為 basic1
-    basic6 = cmbr.dup()
-    basic6.rotate(150)
-    basic6.translate(0, 40)
+    basic2 = cmbr.dup()
+    basic2.rotate(90)
+    basic2.translate(0, 0) 
     
-    basic7 = cmbr.dup()
-    basic7.rotate(210)
-    basic7.translate(40, 40)
-    
-    cmbr.appendPath(basic6)
-    cmbr.appendPath(basic7)
+    cmbr.appendPath(basic2)
     
     # hole 為原點位置
     hole = cobj(shapedefs.circle(4), "PATH")
@@ -92,11 +63,10 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
     cgo.render(cmbr, x, y, 5, rot)
 
 O(0, 0, 0, 0, 0, "lightyellow", True, 4)
-</script>
 '''
     return outstring
     
-@ag4_40323138.route('/B')
+@ag4_40323130.route('/B')
 def task2():
     outstring = '''
 from javascript import JSConstructor
@@ -138,16 +108,16 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
             "lineWidth": linewidth })
 
     # 複製 cmbr, 然後命名為 basic1
-    basic10 = cmbr.dup()
-    basic10.rotate(90)
-    basic10.translate(60, -20)
+    basic4 = cmbr.dup()
+    basic4.rotate(0)
+    basic4.translate(60, 60) 
     
-    basic11 = cmbr.dup()
-    basic11.rotate(120)
-    basic11.translate(80, -20)
+    basic5 = cmbr.dup()
+    basic5.rotate(90)
+    basic5.translate(60, 60) 
     
-    cmbr.appendPath(basic10)
-    cmbr.appendPath(basic11)
+    cmbr.appendPath(basic4)
+    cmbr.appendPath(basic5)
     
     # hole 為原點位置
     hole = cobj(shapedefs.circle(4), "PATH")
@@ -162,7 +132,7 @@ O(0, 0, 0, 0, 0, "lightyellow", True, 4)
 '''
     return outstring
     
-@ag4_40323138.route('/C')
+@ag4_40323130.route('/C')
 def task3():
     outstring = '''
 from javascript import JSConstructor
@@ -204,11 +174,11 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
             "lineWidth": linewidth })
 
     # 複製 cmbr, 然後命名為 basic1
-    basic6 = cmbr.dup()
-    basic6.rotate(90)
-    basic6.translate((20*math.cos(60*deg)+120), -20*math.sin(60*deg))
+    basic3 = cmbr.dup()
+    basic3.rotate(0)
+    basic3.translate(120, 40) 
     
-    cmbr.appendPath(basic6)
+    cmbr.appendPath(basic3)
     
     # hole 為原點位置
     hole = cobj(shapedefs.circle(4), "PATH")
@@ -223,7 +193,7 @@ O(0, 0, 0, 0, 0, "lightyellow", True, 4)
 '''
     return outstring
     
-@ag4_40323138.route('/D')
+@ag4_40323130.route('/D')
 def task4():
     outstring = '''
 from javascript import JSConstructor
@@ -265,16 +235,16 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
             "lineWidth": linewidth })
 
     # 複製 cmbr, 然後命名為 basic1
-    basic9 = cmbr.dup()
-    basic9.rotate(180)
-    basic9.translate((20*math.cos(30*deg)+200), (20*math.sin(30*deg)-20))
+    basic3 = cmbr.dup()
+    basic3.rotate(0)
+    basic3.translate(180, 40)
     
-    basic10 = cmbr.dup()
-    basic10.rotate(180)
-    basic10.translate((20*math.cos(30*deg)+200), 20*math.sin(30*deg))
+    basic4 = cmbr.dup()
+    basic4.rotate(0)
+    basic4.translate(180, 60)
     
-    cmbr.appendPath(basic9)
-    cmbr.appendPath(basic10)
+    cmbr.appendPath(basic3)
+    cmbr.appendPath(basic4)
     
     # hole 為原點位置
     hole = cobj(shapedefs.circle(4), "PATH")
@@ -286,7 +256,5 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
     cgo.render(cmbr, x, y, 5, rot)
 
 O(0, 0, 0, 0, 0, "lightyellow", True, 4)
-
 '''
     return outstring
-

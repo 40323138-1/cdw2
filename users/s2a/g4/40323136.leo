@@ -78,13 +78,14 @@ Diff...
   import users.s2a.g100.scrum2_task1
 - #g3
 - import users.s2a.g3.scrum1_task40123254
-- #g4
-- import users.s2a.g4.ag4_40323138_task1
-- import users.s2a.g4.ag4_40323109_task1
-- import users.s2a.g4.ag4_40323130_task1
-- import users.s2a.g4.ag4_40323135_task1
-- import users.s2a.g4.ag4_40323136_task1
-- import users.s2a.g4.ag4_40323144_task1
+#g4
+  import users.s2a.g4.ag4
+  import users.s2a.g4.ag4_40323138_task1
+  import users.s2a.g4.ag4_40323109_task1
+  import users.s2a.g4.ag4_40323130_task1
+  import users.s2a.g4.ag4_40323135_task1
+  import users.s2a.g4.ag4_40323136_task1
+  import users.s2a.g4.ag4_40323144_task1
   #g6
 - import users.s2a.g6.ag6
   import users.s2a.g6.ag6_40323112_task1
@@ -329,13 +330,13 @@ Diff...
   #g3
   import users.s2a.g3.scrum1_task40123254
   #g4
-- import users.s2a.g4.ag4
+  import users.s2a.g4.ag4
   import users.s2a.g4.ag4_40323138_task1
   import users.s2a.g4.ag4_40323109_task1
   import users.s2a.g4.ag4_40323130_task1
   import users.s2a.g4.ag4_40323135_task1
   import users.s2a.g4.ag4_40323136_task1
-- import users.s2a.g4.ag4_40323144_task1
+  import users.s2a.g4.ag4_40323144_task1
 ?                                -
 + import users.s2a.g4.ag4_4032314_task1
   #g6
@@ -1610,6 +1611,21 @@ Diff...
 + import users.s2a.g100.task0 as ag100_0
 ?                           +++++++ ++++
 - import users.s2a.g100.scrum2_task1
+- #g4
+- import users.s2a.g4.ag4
+- import users.s2a.g4.ag4_40323138_task1
+-  import users.s2a.g4.ag4_40323109_task1
+- import users.s2a.g4.ag4_40323130_task1
+- import users.s2a.g4.ag4_40323135_task1
+-  import users.s2a.g4.ag4_40323136_task1
+- import users.s2a.g4.ag4_40323144_task1
+- #g6
+- import users.s2a.g4.ag4_40323109_task1
+- import users.s2a.g4.ag4_40323109_task1
+- import users.s2a.g6.ag6_40323147_task1
+- import users.s2a.g6.ag6_40323152_task1
+- import users.s2a.g6.ag6_40323155_task1
+- import users.s2a.g6.ag6_40323156_task1
 - #g6
 - import users.s2a.g6.ag6_40323112_task1
 - import users.s2a.g6.ag6_40323133_task1

@@ -15,7 +15,7 @@ import users.s2a.g100.scrum2_task1
 #g3
 import users.s2a.g3.scrum1_task40123254
 #g4
-import users.s2a.g6.ag6_40323138_task1
+import users.s2a.g4.ag4_40323138_task1
 #g6
 import users.s2a.g6.ag6
 import users.s2a.g6.ag6_40323112_task1

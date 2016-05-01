@@ -11,7 +11,7 @@
 <vnodes>
 <v t="leo.20160328091117.1"><vh>Task0 任務說明</vh></v>
 <v t="leo.20160328091134.1"><vh>@edit index.html</vh></v>
-<v t="leo.20160328094609.1"><vh>master 分支 flask 程式開發</vh>
+<v t="leo.20160328094609.1" a="E"><vh>master 分支 flask 程式開發</vh>
 <v t="leo.20160328094609.2"><vh>@edit ag4.py</vh></v>
 <v t="leo.20160328114919.1"><vh>@edit ag4_40323138_task1.py</vh></v>
 <v t="leo.20160328094609.3" a="E"><vh>@path templates</vh>
@@ -39,7 +39,7 @@
 <v t="leo.20160328091641.3"><vh>@edit 2016_cd_2a_2.txt</vh></v>
 <v t="leo.20160328091641.4"><vh>@edit 2016_cd_2a_3.txt</vh></v>
 </v>
-<v t="leo.20160411082755.2" a="E"><vh>Recovered Nodes</vh>
+<v t="leo.20160411082755.2"><vh>Recovered Nodes</vh>
 <v t="leo.20160411082755.3" a="E"><vh>Recovered node "myflaskapp declarations" from @clean myflaskapp.py</vh>
 <v t="leo.20160411082755.4"><vh>old:myflaskapp declarations</vh></v>
 <v t="leo.20160411082755.5"><vh>new:myflaskapp declarations</vh></v>
@@ -1457,7 +1457,7 @@ import users.s2a.g100.scrum2_task1
 #g3
 import users.s2a.g3.scrum1_task40123254
 #g4
-import users.s2a.g6.ag6_40323138_task1
+import users.s2a.g4.ag4_40323138_task1
 #g6
 import users.s2a.g6.ag6
 import users.s2a.g6.ag6_40323112_task1

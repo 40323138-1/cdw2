@@ -47,10 +47,11 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
             "lineWidth": linewidth })
 
     # 複製 cmbr, 然後命名為 basic1
-    basic1 = cmbr.dup()
-    basic1.rotate(180)
+    basic2 = cmbr.dup()
+    basic2.rotate(90)
+    basic2.translate(0, 0) 
     
-    cmbr.appendPath(basic1)
+    cmbr.appendPath(basic2)
     
     # hole 為原點位置
     hole = cobj(shapedefs.circle(4), "PATH")
@@ -61,7 +62,7 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
     # 放大 5 倍
     cgo.render(cmbr, x, y, 5, rot)
 
-O(0, 0, 0, 0, 0, "lightyellow", True, 4)
+O(0, 0, 0, 0, 0, "yellow", True, 4)
 '''
     return outstring
     

@@ -67,8 +67,7 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
     # 放大 5 倍
     cgo.render(cmbr, x, y, 5, rot)
 
-O(0, 0, 0, 0, 0, "lightyellow", True, 4)
-</script>
+O(0, 0, 0, 0, 0, "blue", True, 4)
 '''
     return outstring
     
@@ -134,7 +133,7 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
     # 放大 5 倍
     cgo.render(cmbr, x, y, 5, rot)
 
-O(0, 0, 0, 0, 0, "lightyellow", True, 4)
+O(0, 0, 0, 0, 0, "blue", True, 4)
 '''
     return outstring
     
@@ -195,7 +194,7 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
     # 放大 5 倍
     cgo.render(cmbr, x, y, 5, rot)
 
-O(0, 0, 0, 0, 0, "lightyellow", True, 4)
+O(0, 0, 0, 0, 0, "blue", True, 4)
 '''
     return outstring
     
@@ -261,21 +260,7 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
     # 放大 5 倍
     cgo.render(cmbr, x, y, 5, rot)
 
-O(0, 0, 0, 0, 0, "lightyellow", True, 4)
-</script>
-<!-- 以協同方式加上 40323138 的 A 程式碼 -->
-<script type="text/python" src="/ag4_40323138/A"></script>
-
-<!-- 以協同方式加上 40323138 的 B 程式碼 -->
-<script type="text/python" src="/ag4_40323138/B"></script>
-
-<!-- 以協同方式加上 40323138 的 C 程式碼 -->
-<script type="text/python" src="/ag4_40323138/C"></script>
-
-<!-- 以協同方式加上 40323138 的 C 程式碼 -->
-<script type="text/python" src="/ag4_40323138/D"></script>
-
-</body>
-</html>
+O(0, 0, 0, 0, 0, "blue", True, 4)
 '''
     return outstring
+

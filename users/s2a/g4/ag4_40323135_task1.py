@@ -46,17 +46,11 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
             "strokeColor": "tan",
             "lineWidth": linewidth })
 
-    # 複製 cmbr, 然後命名為 basic1 
-    basic3 = cmbr.dup()
-    basic3.rotate(90)
-    basic3.translate(20, 0)
+    # 複製 cmbr, 然後命名為 basic1
+    basic1 = cmbr.dup()
+    basic1.rotate(180)
     
-    basic11 = cmbr.dup()
-    basic11.rotate(0)
-    basic11.translate(40, 40)
-    
-    cmbr.appendPath(basic3)
-    cmbr.appendPath(basic11)
+    cmbr.appendPath(basic1)
     
     # hole 為原點位置
     hole = cobj(shapedefs.circle(4), "PATH")
@@ -67,7 +61,7 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
     # 放大 5 倍
     cgo.render(cmbr, x, y, 5, rot)
 
-O(0, 0, 0, 0, 0, "lightyellow", True, 4)
+O(0, 0, 0, 0, 0, "Orange", True, 4)
 '''
     return outstring
     
@@ -84,7 +78,7 @@ shapedefs = window.shapeDefs
 obj2d = JSConstructor(window.Obj2D)
 cgo = cango("plotarea")
 
-cgo.setWorldCoords(-250, -4500, 5000, 5000)
+cgo.setWorldCoords(-250, -4500, 5000, 5000) 
 
 # 決定要不要畫座標軸線
 #cgo.drawAxes(0, 240, 0, 240, {
@@ -112,17 +106,17 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
             "strokeColor": "tan",
             "lineWidth": linewidth })
 
-    # 複製 cmbr, 然後命名為 basic1 
-    basic6 = cmbr.dup()
-    basic6.rotate(60)
-    basic6.translate(80, 60)
+    # 複製 cmbr, 然後命名為 basic1
+    basic4 = cmbr.dup()
+    basic4.rotate(0)
+    basic4.translate(60, 60) 
     
-    basic7 = cmbr.dup()
-    basic7.rotate(90)
-    basic7.translate(60, 20)
+    basic5 = cmbr.dup()
+    basic5.rotate(90)
+    basic5.translate(60, 60) 
     
-    cmbr.appendPath(basic6)
-    cmbr.appendPath(basic7)
+    cmbr.appendPath(basic4)
+    cmbr.appendPath(basic5)
     
     # hole 為原點位置
     hole = cobj(shapedefs.circle(4), "PATH")
@@ -133,10 +127,10 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
     # 放大 5 倍
     cgo.render(cmbr, x, y, 5, rot)
 
-O(0, 0, 0, 0, 0, "lightyellow", True, 4)
+O(0, 0, 0, 0, 0, "Orange", True, 4)
 '''
     return outstring
-
+    
 @ag4_40323135.route('/C')
 def task3():
     outstring = '''
@@ -178,12 +172,12 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
             "strokeColor": "tan",
             "lineWidth": linewidth })
 
-    # 複製 cmbr, 然後命名為 basic1 
-    basic4 = cmbr.dup()
-    basic4.rotate(150)
-    basic4.translate(120, 40)
+    # 複製 cmbr, 然後命名為 basic1
+    basic3 = cmbr.dup()
+    basic3.rotate(0)
+    basic3.translate(120, 40) 
     
-    cmbr.appendPath(basic4)
+    cmbr.appendPath(basic3)
     
     # hole 為原點位置
     hole = cobj(shapedefs.circle(4), "PATH")
@@ -194,7 +188,7 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
     # 放大 5 倍
     cgo.render(cmbr, x, y, 5, rot)
 
-O(0, 0, 0, 0, 0, "lightyellow", True, 4)
+O(0, 0, 0, 0, 0, "Orange", True, 4)
 '''
     return outstring
     
@@ -239,17 +233,17 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
             "strokeColor": "tan",
             "lineWidth": linewidth })
 
-    # 複製 cmbr, 然後命名為 basic1 
-    basic5 = cmbr.dup()
-    basic5.rotate(90)
-    basic5.translate(180, 60)
+    # 複製 cmbr, 然後命名為 basic1
+    basic3 = cmbr.dup()
+    basic3.rotate(0)
+    basic3.translate(180, 40)
     
-    basic6 = cmbr.dup()
-    basic6.rotate(90)
-    basic6.translate(180, -20)
+    basic4 = cmbr.dup()
+    basic4.rotate(0)
+    basic4.translate(180, 60)
     
-    cmbr.appendPath(basic5)
-    cmbr.appendPath(basic6)
+    cmbr.appendPath(basic3)
+    cmbr.appendPath(basic4)
     
     # hole 為原點位置
     hole = cobj(shapedefs.circle(4), "PATH")
@@ -260,6 +254,6 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
     # 放大 5 倍
     cgo.render(cmbr, x, y, 5, rot)
 
-O(0, 0, 0, 0, 0, "lightyellow", True, 4)
+O(0, 0, 0, 0, 0, "Orange", True, 4)
 '''
     return outstring

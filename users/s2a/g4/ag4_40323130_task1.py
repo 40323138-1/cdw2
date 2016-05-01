@@ -46,12 +46,17 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
             "strokeColor": "tan",
             "lineWidth": linewidth })
 
-    # 複製 cmbr, 然後命名為 basic1
-    basic2 = cmbr.dup()
-    basic2.rotate(90)
-    basic2.translate(0, 0) 
+    # 複製 cmbr, 然後命名為 basic1 
+    basic3 = cmbr.dup()
+    basic3.rotate(90)
+    basic3.translate(20, 0)
     
-    cmbr.appendPath(basic2)
+    basic11 = cmbr.dup()
+    basic11.rotate(0)
+    basic11.translate(40, 40)
+    
+    cmbr.appendPath(basic3)
+    cmbr.appendPath(basic11)
     
     # hole 為原點位置
     hole = cobj(shapedefs.circle(4), "PATH")
@@ -107,17 +112,17 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
             "strokeColor": "tan",
             "lineWidth": linewidth })
 
-    # 複製 cmbr, 然後命名為 basic1
-    basic4 = cmbr.dup()
-    basic4.rotate(0)
-    basic4.translate(60, 60) 
+    # 複製 cmbr, 然後命名為 basic1 
+    basic6 = cmbr.dup()
+    basic6.rotate(60)
+    basic6.translate(80, 60)
     
-    basic5 = cmbr.dup()
-    basic5.rotate(90)
-    basic5.translate(60, 60) 
+    basic7 = cmbr.dup()
+    basic7.rotate(90)
+    basic7.translate(60, 20)
     
-    cmbr.appendPath(basic4)
-    cmbr.appendPath(basic5)
+    cmbr.appendPath(basic6)
+    cmbr.appendPath(basic7)
     
     # hole 為原點位置
     hole = cobj(shapedefs.circle(4), "PATH")
@@ -131,7 +136,7 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
 O(0, 0, 0, 0, 0, "lightyellow", True, 4)
 '''
     return outstring
-    
+
 @ag4_40323130.route('/C')
 def task3():
     outstring = '''
@@ -173,12 +178,12 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
             "strokeColor": "tan",
             "lineWidth": linewidth })
 
-    # 複製 cmbr, 然後命名為 basic1
-    basic3 = cmbr.dup()
-    basic3.rotate(0)
-    basic3.translate(120, 40) 
+    # 複製 cmbr, 然後命名為 basic1 
+    basic4 = cmbr.dup()
+    basic4.rotate(150)
+    basic4.translate(120, 40)
     
-    cmbr.appendPath(basic3)
+    cmbr.appendPath(basic4)
     
     # hole 為原點位置
     hole = cobj(shapedefs.circle(4), "PATH")
@@ -234,17 +239,17 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
             "strokeColor": "tan",
             "lineWidth": linewidth })
 
-    # 複製 cmbr, 然後命名為 basic1
-    basic3 = cmbr.dup()
-    basic3.rotate(0)
-    basic3.translate(180, 40)
+    # 複製 cmbr, 然後命名為 basic1 
+    basic5 = cmbr.dup()
+    basic5.rotate(90)
+    basic5.translate(180, 60)
     
-    basic4 = cmbr.dup()
-    basic4.rotate(0)
-    basic4.translate(180, 60)
+    basic6 = cmbr.dup()
+    basic6.rotate(90)
+    basic6.translate(180, -20)
     
-    cmbr.appendPath(basic3)
-    cmbr.appendPath(basic4)
+    cmbr.appendPath(basic5)
+    cmbr.appendPath(basic6)
     
     # hole 為原點位置
     hole = cobj(shapedefs.circle(4), "PATH")

@@ -8,6 +8,30 @@ ag4_40323109 = Blueprint('ag4_40323109', __name__, url_prefix='/ag4_40323109', t
 @ag4_40323109.route('/A')
 def task1():
     outstring = '''
+     <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>網際 2D 繪圖</title>
+    <!-- IE 9: display inline SVG -->
+    <meta http-equiv="X-UA-Compatible" content="IE=9">
+<script type="text/javascript" src="http://brython.info/src/brython_dist.js"></script>
+<script type="text/javascript" src="http://cptocadp-2015fallhw.rhcloud.com/static/Cango-8v03.js"></script>
+<script type="text/javascript" src="http://cptocadp-2015fallhw.rhcloud.com/static/Cango2D-6v13.js"></script>
+<script type="text/javascript" src="http://cptocadp-2015fallhw.rhcloud.com/static/CangoAxes-1v33.js"></script>
+
+</head>
+<body>
+
+<script>
+window.onload=function(){
+brython(1);
+}
+</script>
+
+<canvas id="plotarea" width="3000" height="3000"></canvas>
+
+<script type="text/python">
 from javascript import JSConstructor
 from browser import window
 import math

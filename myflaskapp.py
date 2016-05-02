@@ -17,6 +17,7 @@ import users.s2a.g3.scrum1_task40123254
 #g4
 import users.s2a.g4.ag4
 import users.s2a.g4.ag4_40323138_task1
+import users.s2a.g4.ag4_40323138_task1a
 import users.s2a.g4.ag4_40323109_task1
 import users.s2a.g4.ag4_40323130_task1
 import users.s2a.g4.ag4_40323135_task1
@@ -348,6 +349,7 @@ app.register_blueprint(users.s2a.g3.scrum1_task40123254.scrum1_task40123254)
 #g4
 app.register_blueprint(users.s2a.g4.ag4.ag4)
 app.register_blueprint(users.s2a.g4.ag4_40323138_task1.ag4_40323138)
+app.register_blueprint(users.s2a.g4.ag4_40323138_task1a.ag4_40323138a)
 app.register_blueprint(users.s2a.g4.ag4_40323130_task1.ag4_40323130)
 app.register_blueprint(users.s2a.g4.ag4_40323135_task1.ag4_40323135)
 app.register_blueprint(users.s2a.g4.ag4_40323109_task1.ag4_40323109)

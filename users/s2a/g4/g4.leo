@@ -80,6 +80,12 @@
 <v t="123.20160502093012.4"><vh>new:myflaskapp declarations</vh></v>
 </v>
 </v>
+<v t="123.20160504194746.2" a="E"><vh>Recovered Nodes</vh>
+<v t="123.20160504194746.3"><vh>Recovered node "myflaskapp declarations" from @clean myflaskapp.py</vh>
+<v t="123.20160504194746.4"><vh>old:myflaskapp declarations</vh></v>
+<v t="123.20160504194746.5"><vh>new:myflaskapp declarations</vh></v>
+</v>
+</v>
 </vnodes>
 <tnodes>
 <t tx="123.20160501192830.2"></t>
@@ -539,6 +545,236 @@ import users.s2a.g3.scrum1_task40123254
 import users.s2a.g4.ag4
 import users.s2a.g4.ag4_40323138_task1
 import users.s2a.g4.ag4_40323138_task1a
+import users.s2a.g4.ag4_40323109_task1
+import users.s2a.g4.ag4_40323130_task1
+import users.s2a.g4.ag4_40323135_task1
+import users.s2a.g4.ag4_40323144_task1
+import users.s2a.g4.ag4_40323136_task1
+#g6
+import users.s2a.g6.ag6
+import users.s2a.g6.ag6_40323112_task1
+import users.s2a.g6.ag6_40323133_task1
+import users.s2a.g6.ag6_40323147_task1
+import users.s2a.g6.ag6_40323152_task1
+import users.s2a.g6.ag6_40323155_task1
+import users.s2a.g6.ag6_40323156_task1
+#g9
+import users.s2a.g9.ag9
+import users.s2a.g9.ag9_40323132_task1
+import users.s2a.g9.ag9_40323125_task1
+import users.s2a.g9.ag9_40323126_task1
+import users.s2a.g9.ag9_40323153_task1
+import users.s2a.g9.ag9_40323149_task1
+import users.s2a.g9.ag9_40323150_task1
+# 二乙
+# 確定程式檔案所在目錄, 在 Windows 有最後的反斜線
+_curdir = os.path.join(os.getcwd(), os.path.dirname(__file__))
+# 設定在雲端與近端的資料儲存目錄
+if 'OPENSHIFT_REPO_DIR' in os.environ.keys():
+    # 表示程式在雲端執行
+    data_dir = os.environ['OPENSHIFT_DATA_DIR']
+    static_dir = os.environ['OPENSHIFT_REPO_DIR']+"/static"
+    download_dir = os.environ['OPENSHIFT_DATA_DIR']+"/downloads"
+else:
+    # 表示程式在近端執行
+    data_dir = _curdir + "/local_data/"
+    static_dir = _curdir + "/static"
+    download_dir = _curdir + "/local_data/downloads/"
+
+# 利用 init.py 啟動, 建立所需的相關檔案
+initobj = init.Init()
+
+# 必須先將 download_dir 設為 static_folder, 然後才可以用於 download 方法中的 app.static_folder 的呼叫
+app = Flask(__name__)
+#app.config['download_dir'] = download_dir
+
+# 使用 session 必須要設定 secret_key
+# In order to use sessions you have to set a secret key
+# set the secret key.  keep this really secret:
+app.secret_key = 'A0Zr9@8j/3yX R~XHH!jmN]LWX/,?R@T'
+
+
+
+
+
+
+
+</t>
+<t tx="123.20160504194746.2"></t>
+<t tx="123.20160504194746.3">(uncached) leo.20160328094609.7
+Diff...
+  # coding: utf-8
+  from flask import Flask, send_from_directory, request, redirect, render_template, session, make_response
+  import random
+  import math
+  import os
+  # init.py 為自行建立的起始物件
+  import init
+  
+  # 導入各組的程式 (第2步/總共3步, 前面1步利用 Blueprint 建立於 users 目錄下的 task0.py 中的連結對應方法)
+  # 以下依照班別與組別導入模組
+  # 二甲
+  # 導入 ag100 所屬的模組
+  import users.s2a.g100.scrum1_task1
+  import users.s2a.g100.scrum2_task1
+  #g3
+  import users.s2a.g3.scrum1_task40123254
+  #g4
+  import users.s2a.g4.ag4
+  import users.s2a.g4.ag4_40323138_task1
+  import users.s2a.g4.ag4_40323138_task1a
+- import users.s2a.g4.ag4_40323138_task2bacd
+  import users.s2a.g4.ag4_40323109_task1
+  import users.s2a.g4.ag4_40323130_task1
+  import users.s2a.g4.ag4_40323135_task1
+  import users.s2a.g4.ag4_40323144_task1
+  import users.s2a.g4.ag4_40323136_task1
+  #g6
+  import users.s2a.g6.ag6
+  import users.s2a.g6.ag6_40323112_task1
+  import users.s2a.g6.ag6_40323133_task1
+  import users.s2a.g6.ag6_40323147_task1
+  import users.s2a.g6.ag6_40323152_task1
+  import users.s2a.g6.ag6_40323155_task1
+  import users.s2a.g6.ag6_40323156_task1
+  #g9
+  import users.s2a.g9.ag9
+  import users.s2a.g9.ag9_40323132_task1
+  import users.s2a.g9.ag9_40323125_task1
+  import users.s2a.g9.ag9_40323126_task1
+  import users.s2a.g9.ag9_40323153_task1
+  import users.s2a.g9.ag9_40323149_task1
+  import users.s2a.g9.ag9_40323150_task1
+  # 二乙
+  # 確定程式檔案所在目錄, 在 Windows 有最後的反斜線
+  _curdir = os.path.join(os.getcwd(), os.path.dirname(__file__))
+  # 設定在雲端與近端的資料儲存目錄
+  if 'OPENSHIFT_REPO_DIR' in os.environ.keys():
+      # 表示程式在雲端執行
+      data_dir = os.environ['OPENSHIFT_DATA_DIR']
+      static_dir = os.environ['OPENSHIFT_REPO_DIR']+"/static"
+      download_dir = os.environ['OPENSHIFT_DATA_DIR']+"/downloads"
+  else:
+      # 表示程式在近端執行
+      data_dir = _curdir + "/local_data/"
+      static_dir = _curdir + "/static"
+      download_dir = _curdir + "/local_data/downloads/"
+  
+  # 利用 init.py 啟動, 建立所需的相關檔案
+  initobj = init.Init()
+  
+  # 必須先將 download_dir 設為 static_folder, 然後才可以用於 download 方法中的 app.static_folder 的呼叫
+  app = Flask(__name__)
+  #app.config['download_dir'] = download_dir
+  
+  # 使用 session 必須要設定 secret_key
+  # In order to use sessions you have to set a secret key
+  # set the secret key.  keep this really secret:
+  app.secret_key = 'A0Zr9@8j/3yX R~XHH!jmN]LWX/,?R@T'
+  
+  
+  
+  
+  
+  
+  
+</t>
+<t tx="123.20160504194746.4"># coding: utf-8
+from flask import Flask, send_from_directory, request, redirect, render_template, session, make_response
+import random
+import math
+import os
+# init.py 為自行建立的起始物件
+import init
+
+# 導入各組的程式 (第2步/總共3步, 前面1步利用 Blueprint 建立於 users 目錄下的 task0.py 中的連結對應方法)
+# 以下依照班別與組別導入模組
+# 二甲
+# 導入 ag100 所屬的模組
+import users.s2a.g100.scrum1_task1
+import users.s2a.g100.scrum2_task1
+#g3
+import users.s2a.g3.scrum1_task40123254
+#g4
+import users.s2a.g4.ag4
+import users.s2a.g4.ag4_40323138_task1
+import users.s2a.g4.ag4_40323138_task1a
+import users.s2a.g4.ag4_40323109_task1
+import users.s2a.g4.ag4_40323130_task1
+import users.s2a.g4.ag4_40323135_task1
+import users.s2a.g4.ag4_40323144_task1
+import users.s2a.g4.ag4_40323136_task1
+#g6
+import users.s2a.g6.ag6
+import users.s2a.g6.ag6_40323112_task1
+import users.s2a.g6.ag6_40323133_task1
+import users.s2a.g6.ag6_40323147_task1
+import users.s2a.g6.ag6_40323152_task1
+import users.s2a.g6.ag6_40323155_task1
+import users.s2a.g6.ag6_40323156_task1
+#g9
+import users.s2a.g9.ag9
+import users.s2a.g9.ag9_40323132_task1
+import users.s2a.g9.ag9_40323125_task1
+import users.s2a.g9.ag9_40323126_task1
+import users.s2a.g9.ag9_40323153_task1
+import users.s2a.g9.ag9_40323149_task1
+import users.s2a.g9.ag9_40323150_task1
+# 二乙
+# 確定程式檔案所在目錄, 在 Windows 有最後的反斜線
+_curdir = os.path.join(os.getcwd(), os.path.dirname(__file__))
+# 設定在雲端與近端的資料儲存目錄
+if 'OPENSHIFT_REPO_DIR' in os.environ.keys():
+    # 表示程式在雲端執行
+    data_dir = os.environ['OPENSHIFT_DATA_DIR']
+    static_dir = os.environ['OPENSHIFT_REPO_DIR']+"/static"
+    download_dir = os.environ['OPENSHIFT_DATA_DIR']+"/downloads"
+else:
+    # 表示程式在近端執行
+    data_dir = _curdir + "/local_data/"
+    static_dir = _curdir + "/static"
+    download_dir = _curdir + "/local_data/downloads/"
+
+# 利用 init.py 啟動, 建立所需的相關檔案
+initobj = init.Init()
+
+# 必須先將 download_dir 設為 static_folder, 然後才可以用於 download 方法中的 app.static_folder 的呼叫
+app = Flask(__name__)
+#app.config['download_dir'] = download_dir
+
+# 使用 session 必須要設定 secret_key
+# In order to use sessions you have to set a secret key
+# set the secret key.  keep this really secret:
+app.secret_key = 'A0Zr9@8j/3yX R~XHH!jmN]LWX/,?R@T'
+
+
+
+
+
+
+
+</t>
+<t tx="123.20160504194746.5"># coding: utf-8
+from flask import Flask, send_from_directory, request, redirect, render_template, session, make_response
+import random
+import math
+import os
+# init.py 為自行建立的起始物件
+import init
+
+# 導入各組的程式 (第2步/總共3步, 前面1步利用 Blueprint 建立於 users 目錄下的 task0.py 中的連結對應方法)
+# 以下依照班別與組別導入模組
+# 二甲
+# 導入 ag100 所屬的模組
+import users.s2a.g100.scrum1_task1
+import users.s2a.g100.scrum2_task1
+#g3
+import users.s2a.g3.scrum1_task40123254
+#g4
+import users.s2a.g4.ag4
+import users.s2a.g4.ag4_40323138_task1
+import users.s2a.g4.ag4_40323138_task1a
+import users.s2a.g4.ag4_40323138_task2bacd
 import users.s2a.g4.ag4_40323109_task1
 import users.s2a.g4.ag4_40323130_task1
 import users.s2a.g4.ag4_40323135_task1
@@ -1530,6 +1766,7 @@ app.register_blueprint(users.s2a.g3.scrum1_task40123254.scrum1_task40123254)
 app.register_blueprint(users.s2a.g4.ag4.ag4)
 app.register_blueprint(users.s2a.g4.ag4_40323138_task1.ag4_40323138)
 app.register_blueprint(users.s2a.g4.ag4_40323138_task1a.ag4_40323138a)
+app.register_blueprint(users.s2a.g4.ag4_40323138_task2bacd.ag4_40323138bacd)
 app.register_blueprint(users.s2a.g4.ag4_40323130_task1.ag4_40323130)
 app.register_blueprint(users.s2a.g4.ag4_40323135_task1.ag4_40323135)
 app.register_blueprint(users.s2a.g4.ag4_40323109_task1.ag4_40323109)
@@ -1579,6 +1816,7 @@ import users.s2a.g3.scrum1_task40123254
 import users.s2a.g4.ag4
 import users.s2a.g4.ag4_40323138_task1
 import users.s2a.g4.ag4_40323138_task1a
+import users.s2a.g4.ag4_40323138_task2bacd
 import users.s2a.g4.ag4_40323109_task1
 import users.s2a.g4.ag4_40323130_task1
 import users.s2a.g4.ag4_40323135_task1

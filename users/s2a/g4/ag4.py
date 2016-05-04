@@ -45,13 +45,13 @@ cgo = cango("plotarea")
 cgo.setWorldCoords(-250, -4500, 5000, 5000) 
 
 # 決定要不要畫座標軸線
-#cgo.drawAxes(0, 5000, 0, 5000, {
-#    "strokeColor":"#aaaaaa",
-#   "fillColor": "#aaaaaa",
-#    "xTickInterval": 20,
-#    "xLabelInterval": 20,
-#    "yTickInterval": 20,
-#    "yLabelInterval": 20})
+cgo.drawAxes(0, 5000, 0, 5000, {
+    "strokeColor":"#aaaaaa",
+   "fillColor": "#aaaaaa",
+    "xTickInterval": 20,
+    "xLabelInterval": 20,
+    "yTickInterval": 20,
+    "yLabelInterval": 20})
         
 #cgo.drawText("使用 Cango 繪圖程式庫!", 0, 0, {"fontSize":60, "fontWeight": 1200, "lorg":5 })
 

@@ -5,7 +5,7 @@ from flask import Blueprint, render_template
 ag4_40323138a = Blueprint('ag4_40323138a', __name__, url_prefix='/ag4_40323138a', template_folder='templates')
 
 # 展示傳回 Brython 程式
-@ag4_40323138a.route('/Aa')
+@ag4_40323138a.route('/aaaa')
 def task1():
     outstring = '''
     <!DOCTYPE html>
@@ -180,7 +180,7 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
     # 放大 5 倍
     cgo.render(cmbr, x, y, 5, rot)
 
-O(0, 0, 0, 0, 0, "lightyellow", True, 4)
+O(0, 0, 0, 0, 0, "green", True, 4)
 cgo.setWorldCoords(-250, -4500, 5000, 5000) 
 
 # 決定要不要畫座標軸線
@@ -330,7 +330,7 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
     # 放大 5 倍
     cgo.render(cmbr, x, y, 5, rot)
 
-O(0, 0, 0, 0, 0, "lightyellow", True, 4)
+O(0, 0, 0, 0, 0, "green", True, 4)
 cgo.setWorldCoords(-250, -4500, 5000, 5000) 
 
 # 決定要不要畫座標軸線
@@ -569,7 +569,7 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
     # 放大 5 倍
     cgo.render(cmbr, x, y, 5, rot)
 
-O(350, 0, 0, 0, 0, "lightyellow", True, 4)
+O(350, 0, 0, 0, 0, "green", True, 4)
 cgo.setWorldCoords(-250, -4500, 5000, 5000) 
 
 # 決定要不要畫座標軸線
@@ -719,7 +719,7 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
     # 放大 5 倍
     cgo.render(cmbr, x, y, 5, rot)
 
-O(350, 0, 0, 0, 0, "lightyellow", True, 4)
+O(350, 0, 0, 0, 0, "green", True, 4)
 cgo.setWorldCoords(-250, -4500, 5000, 5000) 
 
 # 決定要不要畫座標軸線
@@ -858,7 +858,7 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
     # 放大 5 倍
     cgo.render(cmbr, x, y, 5, rot)
 
-O(700, 0, 0, 0, 0, "lightyellow", True, 4)
+O(700, 0, 0, 0, 0, "green", True, 4)
 cgo.setWorldCoords(-250, -4500, 5000, 5000) 
 
 # 決定要不要畫座標軸線
@@ -1008,7 +1008,7 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
     # 放大 5 倍
     cgo.render(cmbr, x, y, 5, rot)
 
-O(700, 0, 0, 0, 0, "lightyellow", True, 4)
+O(700, 0, 0, 0, 0, "green", True, 4)
 cgo.setWorldCoords(-250, -4500, 5000, 5000) 
 
 # 決定要不要畫座標軸線
@@ -1147,7 +1147,7 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
     # 放大 5 倍
     cgo.render(cmbr, x, y, 5, rot)
 
-O(1050, 0, 0, 0, 0, "lightyellow", True, 4)
+O(1050, 0, 0, 0, 0, "green", True, 4)
 cgo.setWorldCoords(-250, -4500, 5000, 5000) 
 
 # 決定要不要畫座標軸線
@@ -1297,6 +1297,6 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
     # 放大 5 倍
     cgo.render(cmbr, x, y, 5, rot)
 
-O(1050, 0, 0, 0, 0, "lightyellow", True, 4)
+O(1050, 0, 0, 0, 0, "green", True, 4)
 '''
     return outstring

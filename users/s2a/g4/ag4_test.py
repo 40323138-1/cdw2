@@ -48,13 +48,13 @@ cgo.setWorldCoords(-250, -250, 500, 500)
 cgo.drawAxes(0, 240, 0, 240, {
     "strokeColor":"#aaaaaa",
     "fillColor": "#aaaaaa",
+
    "xTickInterval": 20,
     "xLabelInterval": 20,
     "yTickInterval": 20,
     "yLabelInterval": 20})
         
 #cgo.drawText("使用 Cango 繪圖程式庫!", 0, 0, {"fontSize":60, "fontWeight": 1200, "lorg":5 })
-
 deg = math.pi/180  
 def O(x, y, rx, ry, rot, color, border, linewidth):
     # 旋轉必須要針對相對中心 rot not working yet

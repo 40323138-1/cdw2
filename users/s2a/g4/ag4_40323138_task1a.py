@@ -86,7 +86,7 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
     # 放大 5 倍
     cgo.render(cmbr, x, y, 5, rot)
 
-O(0, 0, 0, 0, 0, "yellow", True, 4)
+O(0, 0, 0, 0, 0, "green", True, 4)
 cgo.setWorldCoords(-250, -4500, 5000, 5000) 
 
 # 決定要不要畫座標軸線
@@ -130,7 +130,7 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
     # 放大 5 倍
     cgo.render(cmbr, x, y, 5, rot)
 
-O(0, 0, 0, 0, 0, "Orange", True, 4)
+O(0, 0, 0, 0, 0, "green", True, 4)
 cgo.setWorldCoords(-250, -4500, 5000, 5000) 
 
 # 決定要不要畫座標軸線
@@ -230,7 +230,7 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
     # 放大 5 倍
     cgo.render(cmbr, x, y, 5, rot)
 
-O(0, 0, 0, 0, 0, "pink", True, 4)
+O(0, 0, 0, 0, 0, "green", True, 4)
 cgo.setWorldCoords(-250, -4500, 5000, 5000) 
 
 # 決定要不要畫座標軸線
@@ -280,7 +280,7 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
     # 放大 5 倍
     cgo.render(cmbr, x, y, 5, rot)
 
-O(0, 0, 0, 0, 0, "blue", True, 4)
+O(0, 0, 0, 0, 0, "green", True, 4)
 cgo.setWorldCoords(-250, -4500, 5000, 5000) 
 
 # 決定要不要畫座標軸線
@@ -375,7 +375,7 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
     # 放大 5 倍
     cgo.render(cmbr, x, y, 5, rot)
 
-O(350, 0, 0, 0, 0, "yellow", True, 4)
+O(350, 0, 0, 0, 0, "green", True, 4)
 cgo.setWorldCoords(-250, -4500, 5000, 5000) 
 
 # 決定要不要畫座標軸線
@@ -419,7 +419,7 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
     # 放大 5 倍
     cgo.render(cmbr, x, y, 5, rot)
 
-O(350, 0, 0, 0, 0, "Orange", True, 4)
+O(350, 0, 0, 0, 0, "green", True, 4)
 cgo.setWorldCoords(-250, -4500, 5000, 5000) 
 
 # 決定要不要畫座標軸線
@@ -475,7 +475,7 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
     # 放大 5 倍
     cgo.render(cmbr, x, y, 5, rot)
 
-O(350, 0, 0, 0, 0, "yellow", True, 4)
+O(350, 0, 0, 0, 0, "green", True, 4)
 cgo.setWorldCoords(-250, -4500, 5000, 5000) 
 
 # 決定要不要畫座標軸線
@@ -519,7 +519,7 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
     # 放大 5 倍
     cgo.render(cmbr, x, y, 5, rot)
 
-O(350, 0, 0, 0, 0, "Orange", True, 4)
+O(350, 0, 0, 0, 0, "green", True, 4)
 cgo.setWorldCoords(-250, -4500, 5000, 5000) 
 
 # 決定要不要畫座標軸線
@@ -619,7 +619,7 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
     # 放大 5 倍
     cgo.render(cmbr, x, y, 5, rot)
 
-O(350, 0, 0, 0, 0, "pink", True, 4)
+O(350, 0, 0, 0, 0, "green", True, 4)
 cgo.setWorldCoords(-250, -4500, 5000, 5000) 
 
 # 決定要不要畫座標軸線
@@ -669,7 +669,7 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
     # 放大 5 倍
     cgo.render(cmbr, x, y, 5, rot)
 
-O(350, 0, 0, 0, 0, "blue", True, 4)
+O(350, 0, 0, 0, 0, "green", True, 4)
 cgo.setWorldCoords(-250, -4500, 5000, 5000) 
 
 # 決定要不要畫座標軸線
@@ -764,7 +764,7 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
     # 放大 5 倍
     cgo.render(cmbr, x, y, 5, rot)
 
-O(700, 0, 0, 0, 0, "yellow", True, 4)
+O(700, 0, 0, 0, 0, "green", True, 4)
 cgo.setWorldCoords(-250, -4500, 5000, 5000) 
 
 # 決定要不要畫座標軸線
@@ -808,7 +808,7 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
     # 放大 5 倍
     cgo.render(cmbr, x, y, 5, rot)
 
-O(700, 0, 0, 0, 0, "Orange", True, 4)
+O(700, 0, 0, 0, 0, "green", True, 4)
 cgo.setWorldCoords(-250, -4500, 5000, 5000) 
 
 # 決定要不要畫座標軸線
@@ -908,7 +908,7 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
     # 放大 5 倍
     cgo.render(cmbr, x, y, 5, rot)
 
-O(700, 0, 0, 0, 0, "pink", True, 4)
+O(700, 0, 0, 0, 0, "green", True, 4)
 cgo.setWorldCoords(-250, -4500, 5000, 5000) 
 
 # 決定要不要畫座標軸線
@@ -958,7 +958,7 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
     # 放大 5 倍
     cgo.render(cmbr, x, y, 5, rot)
 
-O(700, 0, 0, 0, 0, "blue", True, 4)
+O(700, 0, 0, 0, 0, "green", True, 4)
 cgo.setWorldCoords(-250, -4500, 5000, 5000) 
 
 # 決定要不要畫座標軸線
@@ -1053,7 +1053,7 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
     # 放大 5 倍
     cgo.render(cmbr, x, y, 5, rot)
 
-O(1050, 0, 0, 0, 0, "yellow", True, 4)
+O(1050, 0, 0, 0, 0, "green", True, 4)
 cgo.setWorldCoords(-250, -4500, 5000, 5000) 
 
 # 決定要不要畫座標軸線
@@ -1097,7 +1097,7 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
     # 放大 5 倍
     cgo.render(cmbr, x, y, 5, rot)
 
-O(1050, 0, 0, 0, 0, "Orange", True, 4)
+O(1050, 0, 0, 0, 0, "green", True, 4)
 cgo.setWorldCoords(-250, -4500, 5000, 5000) 
 
 # 決定要不要畫座標軸線
@@ -1197,7 +1197,7 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
     # 放大 5 倍
     cgo.render(cmbr, x, y, 5, rot)
 
-O(1050, 0, 0, 0, 0, "pink", True, 4)
+O(1050, 0, 0, 0, 0, "green", True, 4)
 cgo.setWorldCoords(-250, -4500, 5000, 5000) 
 
 # 決定要不要畫座標軸線
@@ -1247,7 +1247,7 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
     # 放大 5 倍
     cgo.render(cmbr, x, y, 5, rot)
 
-O(1050, 0, 0, 0, 0, "blue", True, 4)
+O(1050, 0, 0, 0, 0, "green", True, 4)
 cgo.setWorldCoords(-250, -4500, 5000, 5000) 
 
 # 決定要不要畫座標軸線

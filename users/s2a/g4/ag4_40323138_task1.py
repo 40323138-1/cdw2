@@ -67,7 +67,7 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
     # 放大 5 倍
     cgo.render(cmbr, x, y, 5, rot)
 
-O(0, 0, 0, 0, 0, "blue", True, 4)
+O(0, 0, 0, 0, 0, "green", True, 4)
 '''
     return outstring
     
@@ -133,7 +133,7 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
     # 放大 5 倍
     cgo.render(cmbr, x, y, 5, rot)
 
-O(0, 0, 0, 0, 0, "blue", True, 4)
+O(0, 0, 0, 0, 0, "green", True, 4)
 '''
     return outstring
     
@@ -194,7 +194,7 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
     # 放大 5 倍
     cgo.render(cmbr, x, y, 5, rot)
 
-O(0, 0, 0, 0, 0, "blue", True, 4)
+O(0, 0, 0, 0, 0, "green", True, 4)
 '''
     return outstring
     
@@ -260,7 +260,7 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
     # 放大 5 倍
     cgo.render(cmbr, x, y, 5, rot)
 
-O(0, 0, 0, 0, 0, "blue", True, 4)
+O(0, 0, 0, 0, 0, "green", True, 4)
 '''
     return outstring
 

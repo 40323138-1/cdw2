@@ -22,11 +22,11 @@
 <v t="123.20160504174935.1"><vh>@edit ag4_40323138_task1a.py</vh></v>
 <v t="123.20160504175157.1"><vh>@edit ag4_40323138_task2bacd.py</vh></v>
 <v t="123.20160505000653.1"><vh>@edit ag4_40323138_task3abcd.py</vh></v>
-<v t="leo.20160328094609.3"><vh>@path templates</vh>
+<v t="leo.20160328094609.3" a="E"><vh>@path templates</vh>
 <v t="leo.20160328094609.4"><vh>@edit task1.html</vh></v>
 </v>
-<v t="leo.20160328094609.5"><vh>@path ./../../../</vh>
-<v t="leo.20160328094609.6"><vh>@clean myflaskapp.py</vh>
+<v t="leo.20160328094609.5" a="E"><vh>@path ./../../../</vh>
+<v t="leo.20160328094609.6" a="E"><vh>@clean myflaskapp.py</vh>
 <v t="leo.20160328094609.7"><vh>myflaskapp declarations</vh></v>
 <v t="leo.20160328094609.8"><vh>index</vh></v>
 <v t="leo.20160328094609.9"><vh>user</vh></v>
